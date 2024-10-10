@@ -1,0 +1,91 @@
+1725302373448	geckodriver	INFO	Listening on 127.0.0.1:60629
+1725302462813	geckodriver	INFO	Listening on 127.0.0.1:60771
+1725302465862	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "60772" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pi\\AppData\\Local\\Temp\\rust_mozprofile2PpF6p"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1725302466098	Marionette	INFO	Marionette enabled
+1725302466193	Marionette	INFO	Listening on port 60781
+WebDriver BiDi listening on ws://127.0.0.1:60772
+Read port: 60781
+1725302466306	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript warning: https://id-frontend.prod-east.frontend.public.atl-paas.net/assets/castle.885b8c10.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1725302468923	Marionette	INFO	Stopped listening on port 60781
+Dynamically enable window occlusion 1
+1725302552034	geckodriver	INFO	Listening on 127.0.0.1:60872
+1725302555068	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "60873" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pi\\AppData\\Local\\Temp\\rust_mozprofileLJywYG"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1725302555298	Marionette	INFO	Marionette enabled
+1725302555390	Marionette	INFO	Listening on port 60882
+WebDriver BiDi listening on ws://127.0.0.1:60873
+Read port: 60882
+1725302555500	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript warning: https://id-frontend.prod-east.frontend.public.atl-paas.net/assets/castle.885b8c10.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1725302573168	Marionette	INFO	Stopped listening on port 60882
+JavaScript warning: https://id-frontend.prod-east.frontend.public.atl-paas.net/assets/index.5db3decc.js, line 214: Script terminated by timeout at:
+l@https://id-frontend.prod-east.frontend.public.atl-paas.net/assets/index.5db3decc.js:214:3836
+
+Dynamically enable window occlusion 1
+1725302919231	geckodriver	INFO	Listening on 127.0.0.1:61106
+1725302922282	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "61107" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pi\\AppData\\Local\\Temp\\rust_mozprofilebxUKpl"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1725302922510	Marionette	INFO	Marionette enabled
+1725302922609	Marionette	INFO	Listening on port 61116
+WebDriver BiDi listening on ws://127.0.0.1:61107
+Read port: 61116
+1725302922716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://wac-cdn.atlassian.com/static/master/8042/assets/build/js/ad-hoc/bitbucket/bitbucket.js?cdnVersion=2200, line 2: TypeError: o.Z.bitbucket is undefined
+console.error: ({})
+JavaScript error: https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/sentry.js, line 1: TypeError: o.Integrations.RewriteFrames is not a constructor
+JavaScript warning: https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/vendor.js, line 0: Successfully compiled asm.js code (total compilation time 0ms)
+1725302936273	Marionette	INFO	Stopped listening on port 61116
+Dynamically enable window occlusion 1
+1725304523690	geckodriver	INFO	Listening on 127.0.0.1:62733
+1725304526765	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "62734" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pi\\AppData\\Local\\Temp\\rust_mozprofileG9PTQZ"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1725304527002	Marionette	INFO	Marionette enabled
+1725304527128	Marionette	INFO	Listening on port 62743
+WebDriver BiDi listening on ws://127.0.0.1:62734
+Read port: 62743
+1725304527239	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://wac-cdn.atlassian.com/static/master/8042/assets/build/js/ad-hoc/bitbucket/bitbucket.js?cdnVersion=2200, line 2: TypeError: o.Z.bitbucket is undefined
+JavaScript error: https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/sentry.js, line 1: TypeError: o.Integrations.RewriteFrames is not a constructor
+JavaScript warning: https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/vendor.js, line 0: Successfully compiled asm.js code (total compilation time 0ms)
+1725304550720	Marionette	INFO	Stopped listening on port 62743
+Dynamically enable window occlusion 1
+1725304580636	geckodriver	INFO	Listening on 127.0.0.1:62850
+1725304583679	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "62851" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pi\\AppData\\Local\\Temp\\rust_mozprofileIDRzCV"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1725304583907	Marionette	INFO	Marionette enabled
+1725304584004	Marionette	INFO	Listening on port 62860
+WebDriver BiDi listening on ws://127.0.0.1:62851
+Read port: 62860
+1725304584114	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://wac-cdn.atlassian.com/static/master/8042/assets/build/js/ad-hoc/bitbucket/bitbucket.js?cdnVersion=2200, line 2: TypeError: o.Z.bitbucket is undefined
+JavaScript error: https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/sentry.js, line 1: TypeError: o.Integrations.RewriteFrames is not a constructor
+JavaScript warning: https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/vendor.js, line 0: Successfully compiled asm.js code (total compilation time 0ms)
+1725304596886	Marionette	INFO	Stopped listening on port 62860
+Dynamically enable window occlusion 1

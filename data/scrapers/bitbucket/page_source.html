@@ -1,0 +1,1015 @@
+<html lang="en" class="windows firefox"><head>
+  <meta id="bb-bootstrap" data-current-user="{&quot;isAuthenticated&quot;: true, &quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false, &quot;id&quot;: 28141952, &quot;uuid&quot;: &quot;{df3fa456-8b0e-47a5-82be-f2dbd3deeae9}&quot;, &quot;displayName&quot;: &quot;Moussa Moussaoui&quot;, &quot;nickname&quot;: &quot;Moussa Moussaoui&quot;, &quot;avatarUrl&quot;: &quot;https://secure.gravatar.com/avatar/e2e645412fc16097f00f2b664cd8650f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMM-4.png&quot;, &quot;avatarUrl2x&quot;: &quot;https://secure.gravatar.com/avatar/e2e645412fc16097f00f2b664cd8650f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMM-4.png&amp;s=64&quot;, &quot;isTeam&quot;: false, &quot;hasPremium&quot;: false, &quot;mention_id&quot;: &quot;70121:82fb584f-767c-426e-aca8-c62c7716707f&quot;}" data-atlassian-id="70121:82fb584f-767c-426e-aca8-c62c7716707f">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script nonce="">
+
+if (window.performance) {
+
+  
+  window.performance.okayToSendMetrics = !document.hidden && 'onvisibilitychange' in document;
+
+  if (window.performance.okayToSendMetrics) {
+
+    
+    window.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        window.performance.okayToSendMetrics = false;
+      }
+    });
+  }
+
+  
+  
+}
+</script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>
+  java-design-pattern / Repositories — Bitbucket
+</title>
+  
+  
+
+
+<meta name="bb-env" content="production">
+<meta id="bb-canon-url" name="bb-canon-url" content="https://bitbucket.org">
+<meta name="bb-api-canon-url" content="https://api.bitbucket.org">
+<meta name="apitoken" content="{&quot;token&quot;: &quot;3WQwsz68g4tDseofMqSCY3xaH7g4zeNka0BSKkdzrAx-WSxPMEqZeAfXaUEhWv6WNfsjdgkTsX7t62T7ZDzqYlSh0mozolpcXpHr9BkjSdms6aB7qJEsT8hOw9I8pLIisnX2-ASf7CvDpSIgs_IVNyN0Tqnx2b80OpbaEkBAQJJnr089_jak_Uk=&quot;, &quot;expiration&quot;: 1725304886.3730576, &quot;expires_in&quot;: 300}">
+
+
+<meta name="bitbucket-commit-hash" content="2a4465150ac3">
+<meta name="bb-app-node" content="b4487cfcfbe5">
+<meta name="bb-dce-env" content="micros">
+<meta name="bb-view-name" content="bitbucket.apps.explore.views.repository_list">
+<meta name="ignore-whitespace" content="False">
+<meta name="tab-size" content="None">
+<meta name="locale" content="en">
+<meta name="application-name" content="Bitbucket">
+<meta name="apple-mobile-web-app-title" content="Bitbucket">
+<meta name="slack-app-id" content="A8W8QLZD1">
+<meta name="statuspage-api-host" content="https://bqlf8qjztdtr.statuspage.io">
+
+
+<meta name="theme-color" content="#0049B0">
+<meta name="msapplication-TileColor" content="#0052CC">
+<meta name="msapplication-TileImage" content="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/logos/bitbucket/mstile-150x150.png">
+<link rel="apple-touch-icon" sizes="180x180" type="image/png" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/logos/bitbucket/apple-touch-icon.png">
+<link rel="icon" sizes="192x192" type="image/png" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/logos/bitbucket/android-chrome-192x192.png">
+
+<link rel="icon" sizes="16x16 24x24 32x32 64x64" type="image/x-icon" href="/favicon.ico?v=2">
+<link rel="mask-icon" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/logos/bitbucket/safari-pinned-tab.svg" color="#0052CC">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Bitbucket">
+
+  <meta name="description" content="">
+  
+    
+  
+
+
+
+<link rel="stylesheet" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/css/entry/vendor-aui-8.css">
+<link rel="stylesheet" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/css/entry/app.css">
+
+
+<link rel="stylesheet" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/css/entry/adg3-skeleton-nav.css">
+<link rel="stylesheet" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/css/entry/adg3.css">
+  
+  <script nonce="">
+  window.__sentry__ = {"dsn": "https://ea49358f525d4019945839a3d7a8292a@o55978.ingest.sentry.io/159509", "release": "20240901.98192", "environment": "production", "tags": {"dc_location": "Micros-3", "micros_deployment_id": "pi24ugnmq1pk0n8i", "micros_service": "bbc-website", "micros_envtype": "prod", "micros_service_version": "98192", "micros_instance_id": "i-0c55fac291223963f", "micros_zone": "us-east-1.prod.atl-paas.net", "revision": "2a4465150ac3"}};
+</script>
+<script src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/sentry.js" nonce=""></script>
+  <script src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/early.js" nonce=""></script>
+  
+<style data-styled-components="" nonce=""></style><style data-emotion="css"></style><style data-emotion="css"></style><style data-emotion="css" data-s=""></style><style type="text/css">.ap-inline-dialog.ap-link-webitem {pointer-events: auto;}</style><style type="text/css">.ap-dialog.ap-link-webitem {pointer-events: auto;}</style><style type="text/css">.ap-inline-dialog.ap-link-webitem {pointer-events: auto;}</style><style type="text/css">.ap-dialog.ap-link-webitem {pointer-events: auto;}</style><script charset="utf-8" nonce="" src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/0.js"></script><script charset="utf-8" nonce="" src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/3.js"></script><script charset="utf-8" nonce="" src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/1.js"></script><script charset="utf-8" nonce="" src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/5.js"></script></head>
+<body class="production adg3 aui-8 aui-legacy-focus " data-static-url="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/" data-base-url="https://bitbucket.org" data-no-avatar-image="img/default_avatar/user_blue.svg" data-current-user="{&quot;isAuthenticated&quot;: true, &quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false, &quot;id&quot;: 28141952, &quot;uuid&quot;: &quot;{df3fa456-8b0e-47a5-82be-f2dbd3deeae9}&quot;, &quot;displayName&quot;: &quot;Moussa Moussaoui&quot;, &quot;nickname&quot;: &quot;Moussa Moussaoui&quot;, &quot;avatarUrl&quot;: &quot;https://secure.gravatar.com/avatar/e2e645412fc16097f00f2b664cd8650f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMM-4.png&quot;, &quot;avatarUrl2x&quot;: &quot;https://secure.gravatar.com/avatar/e2e645412fc16097f00f2b664cd8650f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMM-4.png&amp;s=64&quot;, &quot;isTeam&quot;: false, &quot;hasPremium&quot;: false, &quot;mention_id&quot;: &quot;70121:82fb584f-767c-426e-aca8-c62c7716707f&quot;}" data-atlassian-id="{&quot;loginUrl&quot;: &quot;https://id.atlassian.com/login?prompt=login&amp;continue=https%3A%2F%2Fbitbucket.org%2Frepo%2Fall%3Fname%3Djava-design-pattern%26language%3Djava&quot;, &quot;loginStatusUrl&quot;: &quot;https://id.atlassian.com/profile/rest/profile&quot;}" data-settings="{&quot;MENTIONS_MIN_QUERY_LENGTH&quot;: 1}" data-switch-create-pullrequest-commit-status="true" data-atlassian-editor-enabled="true" data-atlassian-emoji-base-url="https://bitbucket.org/gateway/api/emoji/" data-aui-version="9.4.9">
+  <div id="page">
+  
+    <div id="adg3-banner-root"></div>
+    <div id="adg3-navigation" data-resolved=""><div class="css-5s7usa-FocusedNavigationWrapper e95vuix0" style="margin-top: 0px; height: calc(0px + 100vh);"><div class="css-cj6wzu"><div class="css-sea5qf"><div class="css-4cxybv"><span><div class="css-0"><div role="presentation" class="css-7xjigh"><div role="presentation"><div class="css-1baulvz"><a href="/" id="productLogoGlobalItem" data-testid="GlobalNavigationItem" class="css-1femwlu"><div class="css-1ixbp0l"><span role="img" aria-label="Go back" style="--icon-primary-color: currentColor; --icon-secondary-color: inherit;" class="css-gu2hl6"><svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="#fff" fill-opacity=".01" d="M0 0h24v24H0z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.207 5.793a1 1 0 010 1.414L8.414 11H18a1 1 0 110 2H8.414l3.793 3.793a1 1 0 11-1.415 1.414l-5.499-5.5A.997.997 0 015 12.028v-.057a.996.996 0 01.293-.678l5.499-5.5a1 1 0 011.415 0z" fill="currentColor"></path></svg></span></div></a></div></div></div></div></span></div></div><div class="css-isqeq9"></div></div></div></div>
+    <div id="wrapper" style="margin-top: 56px;">
+      
+  
+
+<div id="account-warning" data-module="header/account-warning" data-unconfirmed-addresses="false" data-no-addresses="false"></div>
+
+
+
+      
+  
+<header id="aui-message-bar">
+  
+</header>
+
+
+      <div id="content" role="main">
+
+        
+          <header class="app-header">
+
+            <div class="app-header--primary">
+              
+                <div class="app-header--context">
+                  <div class="app-header--breadcrumbs">
+                    
+                  </div>
+                  <h1 class="app-header--heading">
+                    
+                  </h1>
+                </div>
+              
+            </div>
+
+            <div class="app-header--secondary">
+              
+                
+              
+            </div>
+          </header>
+        
+
+        
+        
+  
+    <div class="aui-page-panel aui-page-panel-no-header">
+      <div class="aui-page-panel-inner" data-module="explore/repo-list">
+        <div id="explore" data-module="search" class="aui-page-panel-content">
+          <form id="repo-search-form" class="aui" action="/repo/all">
+            <h1><label for="search-query-input">Search</label></h1>
+            <input type="text" class="text" id="search-query-input" name="name" value="java-design-pattern" placeholder="Find repositories">
+            <input type="hidden" name="language" id="search-language" value="">
+            <button class="aui-button aui-button-primary" type="submit" resolved="">Search</button>
+          </form>
+          <div class="aui-group">
+            <aside id="repo-search-nav" class="aui-item">
+              <nav class="aui-navgroup aui-navgroup-vertical">
+                <div class="aui-navgroup-inner">
+                  <div class="aui-nav-heading"><strong>Language</strong></div>
+                  <ul class="aui-nav" resolved="">
+                    <li class="language has-value">
+                      <a href="#" id="search-language-trigger">Choose...</a>
+                      <div class="select">
+                        <div class="select2-container aui-select2-container select2-allowclear" id="s2id_id_language"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen">Java</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen1"><div class="select2-drop select2-display-none aui-select2-drop aui-dropdown2 select2-with-searchbox aui-layer" resolved="" tabindex="-1">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select name="language" placeholder="Select …" id="id_language" tabindex="-1" class="select2-offscreen">
+  <option value=""></option>
+
+  <optgroup label="Popular">
+  <option value="c">C</option>
+
+  <option value="c#">C#</option>
+
+  <option value="c++">C++</option>
+
+  <option value="go">Go</option>
+
+  <option value="html/css">HTML/CSS</option>
+
+  <option value="java" selected="">Java</option>
+
+  <option value="javascript">JavaScript</option>
+
+  <option value="objective-c">Objective-C</option>
+
+  <option value="perl">Perl</option>
+
+  <option value="php">PHP</option>
+
+  <option value="python">Python</option>
+
+  <option value="ruby">Ruby</option>
+
+  <option value="swift">Swift</option>
+
+  </optgroup>
+  <optgroup label="Other">
+  <option value="abap">ABAP</option>
+
+  <option value="actionscript">ActionScript</option>
+
+  <option value="ada">Ada</option>
+
+  <option value="arc">Arc</option>
+
+  <option value="apex">Apex</option>
+
+  <option value="asciidoc">AsciiDoc</option>
+
+  <option value="android">Android</option>
+
+  <option value="asp">ASP</option>
+
+  <option value="arduino">Arduino</option>
+
+  <option value="assembly">Assembly</option>
+
+  <option value="autoit">AutoIt</option>
+
+  <option value="blitzmax">BlitzMax</option>
+
+  <option value="boo">Boo</option>
+
+  <option value="ceylon">Ceylon</option>
+
+  <option value="clojure">Clojure</option>
+
+  <option value="coco">Coco</option>
+
+  <option value="coffeescript">CoffeeScript</option>
+
+  <option value="coldfusion">ColdFusion</option>
+
+  <option value="common lisp">Common Lisp</option>
+
+  <option value="componentpascal">Component Pascal</option>
+
+  <option value="css">CSS</option>
+
+  <option value="cuda">CUDA</option>
+
+  <option value="d">D</option>
+
+  <option value="dart">Dart</option>
+
+  <option value="delphi">Delphi</option>
+
+  <option value="duby">Duby</option>
+
+  <option value="dylan">Dylan</option>
+
+  <option value="eiffel">Eiffel</option>
+
+  <option value="elixir">Elixir</option>
+
+  <option value="emacs lisp">Emacs Lisp</option>
+
+  <option value="erlang">Erlang</option>
+
+  <option value="euphoria">Euphoria</option>
+
+  <option value="f#">F#</option>
+
+  <option value="fantom">Fantom</option>
+
+  <option value="forth">Forth</option>
+
+  <option value="fortran">Fortran</option>
+
+  <option value="foxpro">FoxPro</option>
+
+  <option value="gambas">Gambas</option>
+
+  <option value="groovy">Groovy</option>
+
+  <option value="hack">Hack</option>
+
+  <option value="haskell">Haskell</option>
+
+  <option value="haxe">Haxe</option>
+
+  <option value="igorpro">IGOR Pro</option>
+
+  <option value="inform">Inform</option>
+
+  <option value="io">Io</option>
+
+  <option value="julia">Julia</option>
+
+  <option value="kotlin">Kotlin</option>
+
+  <option value="labview">LabVIEW</option>
+
+  <option value="lasso">Lasso</option>
+
+  <option value="latex">LaTeX</option>
+
+  <option value="limbo">Limbo</option>
+
+  <option value="livescript">LiveScript</option>
+
+  <option value="lua">Lua</option>
+
+  <option value="lilypond">LilyPond</option>
+
+  <option value="m">M</option>
+
+  <option value="markdown">Markdown</option>
+
+  <option value="mathematica">Mathematica</option>
+
+  <option value="matlab">MATLAB</option>
+
+  <option value="max/msp">Max/MSP</option>
+
+  <option value="mercury">Mercury</option>
+
+  <option value="nemerle">Nemerle</option>
+
+  <option value="nimrod">Nim</option>
+
+  <option value="nodejs">Node.js</option>
+
+  <option value="nu">Nu</option>
+
+  <option value="object pascal">Object Pascal</option>
+
+  <option value="objective-j">Objective-J</option>
+
+  <option value="ocaml">OCaml</option>
+
+  <option value="occam">occam</option>
+
+  <option value="occam-pi">occam-π</option>
+
+  <option value="octave">Octave</option>
+
+  <option value="ooc">ooc</option>
+
+  <option value="other">Other</option>
+
+  <option value="oxygene">Oxygene</option>
+
+  <option value="pl/sql">PL/SQL</option>
+
+  <option value="powerbasic">PowerBASIC</option>
+
+  <option value="powershell">PowerShell</option>
+
+  <option value="processing">Processing</option>
+
+  <option value="prolog">Prolog</option>
+
+  <option value="puppet">Puppet</option>
+
+  <option value="purebasic">Pure Basic</option>
+
+  <option value="pure data">Pure Data</option>
+
+  <option value="qml">QML</option>
+
+  <option value="quorum">Quorum</option>
+
+  <option value="r">R</option>
+
+  <option value="racket">Racket</option>
+
+  <option value="realbasic">Realbasic</option>
+
+  <option value="restructuredtext">reStructuredText</option>
+
+  <option value="rust">Rust</option>
+
+  <option value="sass">Sass/SCSS</option>
+
+  <option value="scala">Scala</option>
+
+  <option value="scheme">Scheme</option>
+
+  <option value="scilab">Scilab</option>
+
+  <option value="sclang">sclang</option>
+
+  <option value="self">Self</option>
+
+  <option value="shell">Shell</option>
+
+  <option value="smalltalk">Smalltalk</option>
+
+  <option value="sourcepawn">SourcePawn</option>
+
+  <option value="sql">SQL</option>
+
+  <option value="standardml">Standard ML</option>
+
+  <option value="supercollider">SuperCollider</option>
+
+  <option value="tcl">Tcl</option>
+
+  <option value="tex">TeX</option>
+
+  <option value="typescript">TypeScript</option>
+
+  <option value="unityscript">UnityScript</option>
+
+  <option value="unrealscript">UnrealScript</option>
+
+  <option value="vala">Vala</option>
+
+  <option value="verilog">Verilog</option>
+
+  <option value="vhdl">VHDL</option>
+
+  <option value="viml">VimL</option>
+
+  <option value="visualbasic">Visual Basic</option>
+
+  <option value="vb.net">VB.NET</option>
+
+  <option value="xml">XML</option>
+
+  <option value="xojo">Xojo</option>
+
+  <option value="xpages">XPages</option>
+
+  <option value="xquery">XQuery</option>
+
+  <option value="xtend">XTend</option>
+
+  <option value="zsh">Z Shell</option>
+
+  </optgroup>
+</select>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </aside>
+
+            <section id="repo-list" class="aui-item">
+              
+                <h1>
+                  
+                    Showing 15 results for “java-design-pattern”
+                  
+                </h1>
+              
+
+              
+                <ol id="repositories" class="iterable">
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/eduardo_c/java-design-patterns">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/eduardo_c/java-design-patterns">eduardo_c / Java Design Patterns</a></h1>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/eduardo_c/java-design-patterns/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2023-05-11T07:23:09.591+01:00" title="11 May 2023 07:23">2023-05-11</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/johnpaults/java-design-patterns">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/johnpaults/java-design-patterns">johnpaults / java-design-patterns</a></h1>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/johnpaults/java-design-patterns/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2023-12-23T14:00:00.901+00:00" title="23 December 2023 14:00">2023-12-23</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/dev_jeff_cys93/java-design-patterns">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/dev_jeff_cys93/java-design-patterns">dev_jeff_cys93 / java-design-patterns</a></h1>
+  
+    <p>Java Design Patterns</p>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/dev_jeff_cys93/java-design-patterns/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2020-12-14T17:58:34.356+00:00" title="14 December 2020 17:58">2020-12-14</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/webtroy/java-design-patterns">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/webtroy/java-design-patterns">webtroy / java-design-patterns</a></h1>
+  
+    <p>Java Design Patterns</p>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/webtroy/java-design-patterns/overview#followers">
+        
+          2 watchers
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2019-10-02T05:41:04.409+01:00" title="2 October 2019 05:41">2019-10-02</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/kotler-dev/java-design-patterns">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/kotler-dev/java-design-patterns">kotler-dev / java-design-patterns</a></h1>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/kotler-dev/java-design-patterns/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2022-03-20T20:02:49.814+00:00" title="20 March 2022 20:02">2022-03-20</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/alexandergolovinov/java-design-patterns">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2019/Mar/05/3631893632-1-java-design-patterns-logo_avatar.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/alexandergolovinov/java-design-patterns">alexandergolovinov / Java Design Patterns</a></h1>
+  
+    <p>Java Design Patterns</p>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/alexandergolovinov/java-design-patterns/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2019-04-18T20:49:47.258+01:00" title="18 April 2019 20:49">2019-04-18</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/mmr-oacapps/java-design-pattern">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/mmr-oacapps/java-design-pattern">mmr-oacapps / Java Design Pattern</a></h1>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/mmr-oacapps/java-design-pattern/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2019-02-07T14:28:09.114+00:00" title="7 February 2019 14:28">2019-02-07</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/mtarrt-free-time/java-design-pattern">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/mtarrt-free-time/java-design-pattern">mtarrt-free-time / java-design-pattern</a></h1>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/mtarrt-free-time/java-design-pattern/overview#followers">
+        
+          2 watchers
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2024-03-25T08:01:13.205+00:00" title="25 March 2024 08:01">2024-03-25</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/lectuce/java-design-patterns">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/lectuce/java-design-patterns">lectuce / java-design-patterns</a></h1>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/lectuce/java-design-patterns/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2020-03-19T03:46:49.356+00:00" title="19 March 2020 03:46">2020-03-19</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                    <li class="iterable-item">
+                      
+
+<article class="repo-summary">
+  <a class="avatar-link" href="/namart/java-design-pattern">
+     <span class="repository-avatar aui-avatar aui-avatar-squared aui-avatar-project aui-avatar-medium ">
+  <span class="aui-avatar-inner">
+    <img src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/img/repo-avatars/java.png" alt="">
+  </span>
+</span>
+
+  </a>
+  <h1><a class="repo-link" href="/namart/java-design-pattern">namart / Java - Design Pattern</a></h1>
+  
+    <p>Collection of Design Pattern written in Java.</p>
+  
+  <ul class="repo-metadata clearfix">
+    <li>
+      
+      <a href="/namart/java-design-pattern/overview#followers">
+        
+          1 watcher
+        
+      </a>
+    </li>
+    <li>
+      <span>
+        
+          updated <time datetime="2014-01-27T11:29:49.491+00:00" title="27 January 2014 11:29">2014-01-27</time>
+        
+      </span>
+    </li>
+  </ul>
+</article>
+
+                    </li>
+                  
+                </ol>
+              
+
+              
+
+
+  
+  <ol class="aui-nav aui-nav-pagination adg3-aui-nav-pagination" resolved="">
+    <li class="aui-nav-previous">
+      <a href="#" aria-disabled="true" id="previous-page-link" aria-label="Previous"></a>
+    </li>
+    
+      <li class="aui-nav-selected">
+        
+          
+            1
+          
+        
+      </li>
+    
+      <li>
+        
+          
+            <a href="/repo/all/2?name=java-design-pattern&amp;language=java" id="page-number-link">2</a>
+          
+        
+      </li>
+    
+    <li class="aui-nav-next">
+      <a href="/repo/all/2?name=java-design-pattern&amp;language=java" id="next-page-link" aria-label="Next"></a>
+    </li>
+  </ol>
+  
+
+
+            </section>
+
+            <div class="aui-item documentation-container">
+              
+
+<section class="more-help clearfix">
+  
+    <h1>Looking for documentation?</h1>
+  
+  <a href="https://confluence.atlassian.com/x/bgozDQ" target="_blank" class="help-link documentation">
+    <strong>Documentation</strong>
+    All the information you need to get started.
+  </a>
+   <a href="https://confluence.atlassian.com/x/Q4sFLQ" target="_blank" class="help-link doc-101">
+    <strong>Clone, commit, push</strong>
+    Let's go over the basics of repository management.
+  </a>
+  <a href="https://confluence.atlassian.com/x/IYBGDQ" target="_blank" class="help-link api">
+    <strong>API</strong>
+    Bitbucket has an extensive API. Check it out!
+  </a>
+  <span class="clear"></span>
+</section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+      </div>
+    </div>
+    
+    <div id="adg3-flag-root"></div>
+    <div id="tos-modal"></div>
+</div>
+
+<div id="adg3-dialog"></div>
+
+
+  
+
+<div data-module="components/mentions/index">
+  
+    
+  
+    
+  
+    
+</div>
+<div data-module="components/typeahead/emoji/index">
+  
+    
+</div>
+
+    
+
+
+
+
+
+  <div class="_mustache-templates">
+    
+      <script id="mention-result" type="text/html">
+        
+[[! Escaping can be disabled (with "&") for these template vars because they're manually escaped in the various consumers ]]
+<span class="mention-result">
+  <span class="aui-avatar aui-avatar-small mention-result--avatar">
+    <span class="aui-avatar-inner">
+      <img src="[[avatar_url]]">
+    </span>
+  </span>
+  [[#display_name]]
+    [[#has_distinct_display_name]]
+      [[#nickname]]
+        <span class="display-name mention-result--display-name">[[&display_name]]</span> <span class="username mention-result--secondary-name mention-result--username">([[&nickname]])</span>
+      [[/nickname]]
+      [[^nickname]]
+        <span class="display-name mention-result--display-name">[[&display_name]]</span> <span class="username mention-result--secondary-name mention-result--username">([[&mention_id]])</span>
+      [[/nickname]]
+    [[/has_distinct_display_name]]
+    [[^has_distinct_display_name]]
+      <span class="display-name mention-result--display-name distinct">[[&display_name]]</span>
+    [[/has_distinct_display_name]]
+  [[/display_name]]
+  [[^display_name]]
+    [[#nickname]]
+      <span class="username mention-result--username">[[&nickname]]</span>
+    [[/nickname]]
+    [[^nickname]]
+      <span class="username mention-result--username">[[&mention_id]]</span>
+    [[/nickname]]
+  [[/display_name]]
+  [[#should_show_review_count]][[#open_review_count]][[^is_team]]
+    <span class="aui-lozenge aui-lozenge-complete aui-lozenge-subtle mention-result--lozenge">
+      [[#is_review_count_plural]]
+        
+          [[open_review_count]] reviews
+        
+      [[/is_review_count_plural]]
+      [[^is_review_count_plural]]
+        
+          [[open_review_count]] review
+        
+      [[/is_review_count_plural]]
+    </span>
+  [[/is_team]][[/open_review_count]][[/should_show_review_count]]
+  [[#is_teammate]][[^is_team]]
+    <span class="aui-lozenge aui-lozenge-complete aui-lozenge-subtle mention-result--lozenge">teammate</span>
+  [[/is_team]][[/is_teammate]]
+</span>
+
+      </script>
+    
+      <script id="mention-call-to-action" type="text/html">
+        
+[[^query]]
+<li class="bb-typeahead-item">Begin typing to search for a user</li>
+[[/query]]
+[[#query]]
+<li class="bb-typeahead-item">Continue typing to search for a user</li>
+[[/query]]
+
+      </script>
+    
+      <script id="mention-no-results" type="text/html">
+        
+[[^searching]]
+<li class="bb-typeahead-item">Found no matching users for <em>[[query]]</em>.</li>
+[[/searching]]
+[[#searching]]
+<li class="bb-typeahead-item bb-typeahead-searching">Searching for <em>[[query]]</em>.</li>
+[[/searching]]
+
+      </script>
+    
+      <script id="emoji-result" type="text/html">
+        
+<span class="emoji-result">
+  <span class="emoji-result--avatar">
+    <img class="emoji" src="[[src]]">
+  </span>
+  <span class="name emoji-result--name">[[&name]]</span>
+</span>
+
+      </script>
+    
+      <script id="scope-list-template" type="text/html">
+        <ul class="scope-list">
+  [[#scopes]]
+    <li class="scope-list--item">[[description]]</li>
+  [[/scopes]]
+</ul>
+
+      </script>
+    
+  </div>
+
+
+
+  
+  
+
+
+<script nonce="">
+  window.__initial_state__ = {"global": {"geoip_country": "UNKNOWN", "is_mobile_user_agent": false, "site_message": {"id": 31795, "title": "Get up to 8x faster builds with Bitbucket Pipelines", "text": "We're excited to announce the launch of our new Bitbucket Pipelines runtime, offering up to 8x faster CI/CD builds", "appearance": "flag", "feature_slug": "", "ld_feature": "show-bitbucket-pipelines-8-x-step-popup", "url": "https://bitbucket.org/blog/announcing-our-new-ci-cd-runtime-with-up-to-8x-faster-builds"}, "needs_marketing_consent": false, "marketing_consent_locale": null, "whats_new_feed": "https://bitbucket.org/blog/wp-json/wp/v2/posts?categories=196&context=embed&per_page=6&orderby=date&order=desc", "locale": "en", "path": "/repo/all", "isFocusedTask": true, "focusedTaskBackButtonUrl": null, "features": {"lookup-pr-approvers-from-prs": true, "log-asap-errors": true, "provisioning-install-pipelines-addon": true, "fd-prs-client-cache-fallback": true, "block-non-pipelines-custom-events-webhooks": true, "view-source-filtering-upon-timeout": true, "read-only-message-migrations": true, "provisioning-skip-workspace-creation": true, "hot-91446-add-tracing-x-b3": true, "fd-repository-page-loading-error-guard": true, "uninstall-dvcs-addon-only-when-jira-is-removed": true, "auth-flow-adg3": true, "workspace-member-set-last-accessed": true, "use-elasticache-lsn-storage": true, "whitelisted_throttle_exemption": true, "atlassian-editor": true, "bbc.core.pride-logo": false, "deployments-ui-in-frontbucket": true, "pipelines-settings-ui-in-frontbucket": true, "pipelines-deployments-settings-ui-in-frontbucket": true, "pipelines-runners-settings-ui-in-frontbucket": true, "pr-dependencies": false, "commit-expand-inno": false, "syntax-highlighting": false, "create-workspace-show-recaptcha": true, "enable-pipelines-page-load-optimisation": true, "lazy-diffstat": false}, "isNavigationOpen": true, "flags": [], "horizontalNavigationItems": {"mainItems": [], "secondaryItems": [], "settingsItems": []}, "currentUser": {"display_name": "Moussa Moussaoui", "links": {"self": {"href": "https://bitbucket.org/!api/2.0/users/%7Bdf3fa456-8b0e-47a5-82be-f2dbd3deeae9%7D"}, "avatar": {"href": "https://secure.gravatar.com/avatar/e2e645412fc16097f00f2b664cd8650f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMM-4.png"}, "html": {"href": "https://bitbucket.org/%7Bdf3fa456-8b0e-47a5-82be-f2dbd3deeae9%7D/"}}, "created_on": "2024-09-02T17:19:51.217682+00:00", "is_active": true, "type": "user", "uuid": "{df3fa456-8b0e-47a5-82be-f2dbd3deeae9}", "has_2fa_enabled": null, "properties": {}, "is_staff": false, "account_id": "70121:82fb584f-767c-426e-aca8-c62c7716707f", "nickname": "Moussa Moussaoui", "account_status": "active", "location": null, "zoneinfo": "Europe/Paris", "organization": null, "department": null, "job_title": null, "extra": {"has_atlassian_account": true, "has_ssh_key": false, "has_premium": false}}, "currentUserEmail": "itsmecryptpi@gmail.com", "theme": null, "isCodeReviewSidebarOpen": true, "isCodeReviewWelcomeDialogOpen": true, "isCommitViewSidebarOpen": true, "isPullRequestIgnoreWhitespaceEnabled": false, "isPullRequestWordDiffEnabled": true, "isPullRequestColorBlindModeEnabled": false, "isPullRequestAnnotationsEnabled": true, "isPullRequestSingleFileModeEnabled": false, "isSourceBrowserSidebarOpen": false, "isBranchSidebarOpen": false, "isCommitSidebarOpen": false, "isCreatePRSidebarOpen": true, "isPipelineListSidebarOpen": false, "sourceBrowserSidebarWidth": null, "pullRequestDiffViewMode": null, "pullRequestFileViewMode": null, "pullRequestDiffTabSize": null, "commitViewSidebarWidth": null, "codeReviewSidebarWidth": null, "branchSidebarWidth": null, "commitSidebarWidth": null, "createPRSidebarWidth": null, "pipelineListSidebarWidth": null, "importBitbucketActions": [], "bitbucketActions": []}};
+  window.__settings__ = {"ADMINHUB_BASE_URL": "https://admin.atlassian.com", "API_CANON_URL": "https://api.bitbucket.org", "CANON_URL": "https://bitbucket.org", "LOGIN_URL": "/account/signin/", "SOCIAL_AUTH_ATLASSIANID_LOGIN_PROMPT_URL": "https://id.atlassian.com/login", "SOCIAL_AUTH_ATLASSIANID_LOGOUT_URL": "https://id.atlassian.com/logout", "SOCIAL_AUTH_ATLASSIANID_PROFILE_URL": "https://id.atlassian.com/manage-profile/", "ATLASSIANID_LOGIN_URL": "https://id.atlassian.com/login", "ATLASSIANID_LOGOUT_URL": "https://id.atlassian.com/logout", "ATLASSIANID_MANAGE_PROFILE_URL": "https://id.atlassian.com/manage-profile/", "MARKETPLACE_TERMS_OF_USE_URL": null, "CONSENT_HUB_FRONTEND_BASE_URL": "https://preferences.atlassian.com", "EMOJI_STANDARD_BASE_URL": "https://bitbucket.org/gateway/api/emoji/", "STATUSPAGE_URL": "https://bitbucket.status.atlassian.com/", "RECAPTCHA_PUBLIC_KEY": "6LcRaMMkAAAAAFB-7L-4-1-mdLIrOMAP4H5asuWK", "WAC_CREATE_WORKSPACE_URL": "https://www.atlassian.com/try/cloud/signup?bundle=bitbucket"};
+  window.__webpack_nonce__ = '/YauvI8B2lGdXyS85X2a8w==';
+</script>
+
+<script src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/jsi18n/en/djangojs.js" nonce=""></script>
+
+  <script src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/locales/en.js" nonce=""></script>
+
+<script src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/aui-8.js" nonce=""></script>
+<script src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/vendor.js" nonce=""></script>
+<script src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/2a4465150ac3/dist/webpack/app.js" nonce=""></script><div class="atlaskit-portal-container" style="display: flex;"><div class="atlaskit-portal" style="z-index: 600;"><div class="css-1xdxiey"><span class="css-b5o75w"><h2>Flag notifications</h2></span><div class=" css-9w0o6w"><div class="css-p1od58"><div role="alert" class="css-8atqhb"><div class="css-an090o"><div class="css-1trnsdp"><div style="--flag-icon-color: var(--ds-icon-inverse, #FFFFFF);" class="css-nl4ain"><span aria-hidden="true" style="--icon-primary-color: currentColor; --icon-secondary-color: var(--ds-background-neutral-bold, #42526E);" class="css-snhnyn"><svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><g fill-rule="evenodd"><path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2 2 6.477 2 12z" fill="currentColor"></path><rect fill="inherit" x="11" y="10" width="2" height="7" rx="1"></rect><circle fill="inherit" cx="12" cy="8" r="1"></circle></g></svg></span></div><span class="css-1fd0fe1"><div class="css-1lu14yt"><div class="css-fgeh2e"><div class="css-65ryv6"><h2 class="css-1tqa3gm">Get up to 8x faster builds with Bitbucket Pipelines</h2></div><button class="css-tokfa8" aria-expanded="false" type="button"><span data-vc="icon-undefined" role="img" aria-label="Expand" style="--icon-primary-color: var(--ds-text-inverse, #FFFFFF); --icon-secondary-color: var(--ds-surface, #FFFFFF);" class="css-1afrefi"><svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" d="M6.744 8.744a1.053 1.053 0 0 0 0 1.49l4.547 4.557a1 1 0 0 0 1.416 0l4.55-4.558a1.051 1.051 0 1 0-1.488-1.488l-3.77 3.776-3.768-3.776a1.05 1.05 0 0 0-1.487 0"></path></svg></span></button></div><div style="max-height: 0px; flex: 1 1 100%; min-width: 0px;" class="css-xcnkq4" aria-hidden="true"></div></div></span></div></div></div></div></div></div></div><div class="atlaskit-portal" style="z-index: 600;"><div class="css-s2ap2z"></div></div><div class="atlaskit-portal" style="z-index: 600;"><div class="css-s2ap2z"></div></div><div class="atlaskit-portal" style="z-index: 600;"><div class="css-s2ap2z"></div></div></div>
+
+
+
+
+
+<div style="position: fixed; top: 0px; left: 0px; z-index: 1000;"></div><div id="connect-react-providers"></div><div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-dropdown2-tailed bb-mention-input-results aui-layer" id="bb-typeahead-suggestions-1" style="z-index: 5000;" resolved="" tabindex="-1"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-1" aria-expanded="false"></div><div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-dropdown2-tailed bb-mention-input-results aui-layer" id="bb-typeahead-suggestions-2" style="z-index: 5000;" resolved="" tabindex="-1"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-2" aria-expanded="false"></div><div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer" id="bb-typeahead-suggestions-3" style="z-index: 5000;" resolved="" tabindex="-1"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-3" aria-expanded="false"></div><div class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer" id="bb-typeahead-suggestions-4" style="z-index: 5000;" resolved="" tabindex="-1"><ul></ul></div><div class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" aria-haspopup="true" resolved="" aria-controls="bb-typeahead-suggestions-4" aria-expanded="false"></div></body></html>

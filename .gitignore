@@ -1,0 +1,19 @@
+# Ignore log files
+*.log
+*.log.*
+
+# Logs directory (if any)
+logs/
+log/
+
+# Ignore environment variables file
+.env
+
+# Ignore env files for different environments
+.env.local
+.env.*.local
+
+# Other common config/environment files
+.env.production
+.env.development
+.env.test

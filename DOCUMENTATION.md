@@ -65,39 +65,6 @@ params = {
 
 9. `num_epochs`: 160
    - Number of complete passes through the training dataset.
-  
-
-## Model Structure
-```python
-class GreekLetterTransformer(nn.Module):
-    def __init__(self, vocab_size, num_classes, d_model, nhead, num_layers, dropout, max_len=148):
-        super().__init__()
-        self.embedding = nn.Embedding(vocab_size, d_model)
-        self.pos_encoder = nn.Embedding(max_len, d_model)
-        self.transformer = nn.TransformerEncoder(
-            nn.TransformerEncoderLayer(d_model, nhead, dim_feedforward=d_model * 4, dropout=dropout),
-            num_layers
-        )
-        self.fc = nn.Linear(d_model, num_classes)
-
-    def forward(self, x, attention_mask):
-        batch_size, seq_len = x.size()
-        pos = torch.arange(seq_len, device=x.device).unsqueeze(0).expand(batch_size, -1)
-
-        embedded = self.embedding(x)
-        positional = self.pos_encoder(pos)
-
-        x = embedded + positional
-        x = x.permute(1, 0, 2)
-
-        mask = (attention_mask == 0).bool()
-
-        x = self.transformer(x, src_key_padding_mask=mask)
-        x = x[0]
-        x = self.fc(x)
-
-        return x
-```
 
 ## Training Details
 - Optimizer: Adam

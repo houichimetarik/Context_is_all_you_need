@@ -4,7 +4,7 @@
 
 ⚡ A 26.3 million parameter model
 
-🎇 Design Patterns Python Dataset available on : https://kaggle.com/datasets/502d4ee213c549555836a5a96b975d626a0ba0ccc6ff8ebf69837912f59822ad
+🎇 The PyDesignNet Design Patterns Dataset available on : https://kaggle.com/datasets/502d4ee213c549555836a5a96b975d626a0ba0ccc6ff8ebf69837912f59822ad
 
 ## Achieved Results
 | Metric | Test    |

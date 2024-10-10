@@ -4,7 +4,7 @@
 
 ⚡ A 26.3 million parameter model
 
-🎇 Design Patterns Python Dataset available on : https://drive.google.com/drive/folders/1xoFFJgrpmOABEgwRvs1c9Q4ZCWer-Kkc?usp=sharing
+🎇 Design Patterns Python Dataset available on : https://kaggle.com/datasets/502d4ee213c549555836a5a96b975d626a0ba0ccc6ff8ebf69837912f59822ad
 
 ## Achieved Results
 | Metric | Test    |
@@ -17,24 +17,6 @@
 ## Model Architecture
  - Model Type: Transformer Encoder
  - Task: Sequence Classification
-
-
-## Hyperparameters
-```python
-params = {
-    'run_id': datetime.now().strftime("%Y%m%d_%H%M%S"),
-    'batch_size': 64,
-    'test_size': 0.25,
-    'random_state': 42,
-    'd_model': 512,
-    'nhead': 16,
-    'num_layers': 8,
-    'dropout': 0.5,
-    'learning_rate': 1e-4,
-    'num_epochs': 160,
-}
-
-```
 
 ### Detailed Parameter Explanation:
 

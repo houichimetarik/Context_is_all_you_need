@@ -1,7 +1,7 @@
 import requests
 
 # Set your personal access token here
-ACCESS_TOKEN = 'glpat-EPxRENXBNuZ79orXMUUW'
+ACCESS_TOKEN = ''
 
 # GitLab API endpoint for searching projects
 GITLAB_API_URL = 'https://gitlab.com/api/v4/projects'

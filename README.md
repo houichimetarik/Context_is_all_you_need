@@ -6,14 +6,6 @@
 
 🎇 The PyDesignNet Design Patterns Dataset available on : https://kaggle.com/datasets/502d4ee213c549555836a5a96b975d626a0ba0ccc6ff8ebf69837912f59822ad
 
-## Achieved Results
-| Metric | Test    |
-|--------|---------|
-| Accuracy    | 92.52%  |
-| Precision   | 92.55%  |
-| Recall    | 92.52%  |
-| F1-score    | 92.47%  |
-
 ## Model Architecture
  - Model Type: Transformer Encoder
  - Task: Sequence Classification
